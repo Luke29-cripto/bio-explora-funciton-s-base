@@ -76,6 +76,7 @@
         <li><a href="#home">Início</a></li>
         <li><a href="#rankings">Rankings</a></li>
         <li><a href="#busca">Buscar Vídeos</a></li>
+        <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Canal no YouTube</a></li>
       </ul>
       <button id="toggle-theme">🌙</button>
     </nav>
@@ -85,6 +86,7 @@
     <section id="home">
       <h2>Bem-vindo ao BioExplora!</h2>
       <p>O seu guia definitivo para explorar o mundo da Biologia com vídeos didáticos e interativos.</p>
+      <p><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Clique aqui para visitar nosso canal no YouTube 🎥</a></p>
     </section>
 
     <section id="rankings">
@@ -93,25 +95,25 @@
         <div class="ranking">
           <h3>Mais Pesquisados</h3>
           <ul id="mais-pesquisados">
-            <li>DNA e RNA</li>
-            <li>Fotossíntese</li>
-            <li>Sistema Nervoso</li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">DNA e RNA</a></li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Fotossíntese</a></li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Sistema Nervoso</a></li>
           </ul>
         </div>
         <div class="ranking">
           <h3>Mais Vistos</h3>
           <ul id="mais-vistos">
-            <li>Genética Mendeliana</li>
-            <li>Ecossistemas</li>
-            <li>Mitose e Meiose</li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Genética Mendeliana</a></li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Ecossistemas</a></li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Mitose e Meiose</a></li>
           </ul>
         </div>
         <div class="ranking">
           <h3>Mais Completos</h3>
           <ul id="mais-completos">
-            <li>Origem da Vida</li>
-            <li>Imunologia</li>
-            <li>Reino Animal</li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Origem da Vida</a></li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Imunologia</a></li>
+            <li><a href="https://www.youtube.com/@ProfeJuoficial" target="_blank">Reino Animal</a></li>
           </ul>
         </div>
       </div>
@@ -148,7 +150,11 @@
 
       filtrados.forEach(t => {
         const li = document.createElement('li');
-        li.textContent = t;
+        const link = document.createElement('a');
+        link.href = 'https://www.youtube.com/@ProfeJuoficial';
+        link.target = '_blank';
+        link.textContent = t;
+        li.appendChild(link);
         resultados.appendChild(li);
       });
     }
